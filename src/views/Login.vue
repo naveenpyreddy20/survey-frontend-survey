@@ -58,7 +58,7 @@ export default {
         .then((response) => {
           if (
             response.status === 200 &&
-            response.data.userRole === "superadmin"
+            response.data.userRole === "admin"
           ) {
             sessionStorage.setItem("token", response.data.accessToken);
             sessionStorage.setItem("email", response.data.email);
