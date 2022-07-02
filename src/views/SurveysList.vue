@@ -52,7 +52,7 @@ export default {
           isPublished: true,
         },
       ],
-      message: "Manage all surveys created by super admin",
+      message: "Manage Surveys",
     };
   },
   components: {
