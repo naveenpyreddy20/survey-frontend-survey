@@ -23,13 +23,8 @@
         </v-col>
       </div>
       <div class="list_table_body" v-if="surveys.length > 0">
-        <SurveysListItem
-          v-for="survey in surveys"
-          :key="survey.id"
-          :survey="survey"
-          @deleteSurvey="gotToDeleteSurvey(survey)"
-          @viewSurvey="goToViewSurvey(survey)"
-        />
+        <SurveysListItem v-for="survey in surveys" :key="survey.id" :survey="survey"
+          @deleteSurvey="gotToDeleteSurvey(survey)" @viewSurvey="goToViewSurvey(survey)" />
       </div>
       <h3 class="list_table_body no_results" v-else="surveys.length < 0">
         SORRY NO SURVEYS TO DISPLAY
@@ -47,9 +42,14 @@ export default {
     return {
       surveys: [
         {
-          title: "micheal",
-          description: "test",
+          title: "Understanding of astronomy",
+          description: "astronomy",
           isPublished: true,
+        },
+        {
+          title: "Understanding Space",
+          description: "space",
+          isPublished: false,
         },
       ],
       message: "Manage Surveys",

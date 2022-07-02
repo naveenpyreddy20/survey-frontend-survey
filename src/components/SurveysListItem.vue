@@ -6,8 +6,8 @@
     <v-col cols="9" sm="2">
       <span> {{ survey.description }}</span>
     </v-col>
-      <v-col cols="9" sm="2">
-      <span> {{ survey.isPublished }}</span>
+    <v-col cols="9" sm="2">
+      <span> {{ survey.isPublished ? 'Published' : "UnPublished" }}</span>
     </v-col>
     <v-col cols="9" sm="1">
       <v-btn size="x-small" icon="mdi-format-list-bulleted-type" @click="viewSurvey" />
@@ -38,5 +38,4 @@ export default {
 </script>
 
 <style>
-
 </style>
