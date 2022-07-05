@@ -3,8 +3,8 @@ class AuthService {
   login(authData) {
     return http.post(`/user/signin`,authData);
   }
-  logout(emailId) {
-    return http.get(`/users/logout/${emailId}`);
+  logout(id) {
+    return http.get(`/user/logout/${id}`);
   }
 }
 export default new AuthService();
