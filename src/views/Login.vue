@@ -64,6 +64,7 @@ export default {
             sessionStorage.setItem("email", response.data.email);
             sessionStorage.setItem("userName", response.data.username);
             sessionStorage.setItem("userRole", response.data.userRole);
+            sessionStorage.setItem("id", response.data.id);
             this.$router.push({ name: "surveys" });
           }
         })
