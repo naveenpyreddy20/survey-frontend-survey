@@ -1,7 +1,6 @@
 <template>
     <router-view />
 </template>
-
 <script>
 import logo from "./assets/app_logo.svg";
 import "./App.css";
