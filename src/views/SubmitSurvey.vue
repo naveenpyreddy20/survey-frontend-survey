@@ -105,7 +105,7 @@ export default {
   },
   methods: {
     retreiveSurvey() {
-      SurveyDataService.getSurvey(this.surveyId)
+      SurveyService.getSurvey(this.surveyId)
         .then((response) => {
           const apiResponse = response.data;
           this.survey.title = apiResponse.surveyTitle;
